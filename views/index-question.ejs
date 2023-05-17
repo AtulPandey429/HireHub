@@ -1,0 +1,23 @@
+<%- include('./partials/header.ejs') %>
+
+<div class="container">
+    <a href="/jobs/<%= jobId %>/questions/new" class="btn btn-danger">Add a New Question</a>
+    <h1>List of All Questions</h1>
+    <% for(let ques of questions) { %>
+    <div class="question">
+        <div class="question-description"><%= ques.description %></div>
+        <div class="options">
+            <div><strong>Option 1:</strong> <%= ques.option1 %></div>
+            <div><strong>Option 2:</strong> <%= ques.option2 %></div>
+            <div><strong>Option 3:</strong> <%= ques.option3 %></div>
+            <div><strong>Option 4:</strong> <%= ques.option4 %></div>
+        </div>
+        <div class="correct-option">Correct Option: <%= ques.correctOption %></div>
+        <form action="/jobs/<%= jobId %>/questions/<%= ques._id %>?_method=DELETE" method="post" class="delete-form">
+            <input type="submit" value="Delete">
+        </form>
+    </div>
+    <% } %>
+</div>
+
+<%- include('./partials/footer.ejs') %>

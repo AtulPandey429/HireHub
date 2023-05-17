@@ -1,0 +1,61 @@
+<%- include('./partials/header.ejs') %>
+
+<div class="landing-container">
+    <div class="row">
+        <div class="col-12 landing-content">
+            <h4 id="landingTitle">"Discover your perfect career match through our comprehensive placement portal, connecting job seekers with diverse opportunities and empowering them to achieve professional success."</h4>
+            <p>Welcome to our website!</p>
+            <button id="ctaButton" class="btn btn-primary">Learn More</button>
+        </div>
+    </div>
+</div>
+
+<img class="fixed-image" src="https://images.pexels.com/photos/3760072/pexels-photo-3760072.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+
+<div class="additional-content">
+    <h2>More Content</h2>
+    <p>Here is some additional content that enhances the user experience.</p>
+</div>
+
+<%- include('./partials/footer.ejs') %>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#landingTitle').textillate({
+            loop: true,
+            minDisplayTime: 2000,
+            initialDelay: 1000,
+            autoStart: true,
+            in: {
+                effect: 'fadeIn',
+                delayScale: 1.5,
+                delay: 50,
+                sync: false,
+                shuffle: false,
+            },
+            out: {
+                effect: 'fadeOut',
+                delayScale: 1.5,
+                delay: 50,
+                sync: false,
+                shuffle: false,
+            },
+        });
+    });
+    function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // Attach the function to any links or buttons that should scroll to the top
+  $('a[href="#top"]').click(scrollToTop);
+  $('#ctaButton').click(scrollToTop);
+
+    document.getElementById('ctaButton').addEventListener('click', function() {
+        alert('Thank you for your interest! Stay tuned for updates.');
+    });
+</script>

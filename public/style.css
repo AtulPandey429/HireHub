@@ -1,0 +1,279 @@
+img {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+
+/* styles.css */
+
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control {
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 100%;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+}
+
+
+
+/* user jobs */
+/* body {
+    padding-top: 60px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+} */
+
+.job-grid {
+    margin: 20px;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 90px;
+    
+}
+
+.job-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.job-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.job-card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.job-card a.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.job-card a.btn:hover {
+    background-color: #0069d9;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.page-heading {
+    background-color: #f8f9fa;
+    padding: 0px;
+    border-radius: 12px;
+    color: #333;
+    text-align: center;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+} 
+
+
+
+
+/* show page  */
+
+.job-details {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.job-info {
+    margin-top: 20px;
+}
+
+.job-address {
+    font-weight: bold;
+}
+
+.job-image {
+    margin-top: 20px;
+}
+
+.job-type,
+.job-cgpa,
+.job-deadline,
+.job-created-at,
+.job-package {
+    margin-top: 10px;
+}
+
+.btn {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.applied-students {
+    margin-top: 20px;
+}
+
+
+
+@media (max-width: 576px) {
+    h1 {
+      font-size: 24px;
+    }
+  }
+
+
+  .notif-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .notif-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+  }
+
+  .notif-body {
+    padding: 20px;
+  }
+
+  .notif-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+
+  .notif-author {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+  }
+
+  .notif-read-more {
+    margin-right: 10px;
+    font-size: 0.9rem;
+  }
+
+  .notif-delete {
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 576px) {
+    .notif-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .notif-card {
+      margin-bottom: 20px;
+    }
+
+    .notif-body {
+      padding: 10px;
+    }
+
+    .notif-title {
+      font-size: 1rem;
+    }
+
+    .notif-author {
+      font-size: 0.8rem;
+    }
+
+    .notif-read-more {
+      margin-right: 5px;
+      font-size: 0.8rem;
+    }
+
+    .notif-delete {
+      font-size: 0.8rem;
+    }
+  }

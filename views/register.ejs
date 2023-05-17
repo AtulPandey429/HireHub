@@ -1,0 +1,31 @@
+<%- include('./partials/header.ejs') %>
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-lg-6">
+            <img src="https://preview.colorlib.com/theme/bootstrap/login-form-07/images/undraw_remotely_2j6y.svg"
+                id="login-img" alt="">
+        </div>
+
+        <div class="col-lg-6">
+            <div class="col-md-8 offset-md-2 register-form">
+                <h1>Register Form</h1>
+                <form action="/register" method="post">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="email" name="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <div>
+                        <input class="btn btn-primary" type="submit" value="Register">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('./partials/footer.ejs') %>

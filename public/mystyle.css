@@ -1,0 +1,339 @@
+body{
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    animation: backgroundAnimation 10s infinite;
+    background: linear-gradient(45deg, #E6E6FA, #FFC0CB, #B0E0E6);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+
+}
+.notifclass{
+
+color: rgb(14, 197, 69) ;
+}
+
+
+/* log in form */
+body {
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    animation: backgroundAnimation 10s infinite;
+    
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-color: #f8f9fa;
+    }
+    50% {
+        background-color: #e9ecef;
+    }
+    100% {
+        background-color: #f8f9fa;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form {
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.login-form h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 8px;
+    width: 100%;
+    transition: border-bottom-color 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    outline: none;
+    border-bottom-color: #007bff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+}
+.landing-container {
+    height: 100vh; /* set a fixed height equal to the viewport height */
+    overflow: auto; /* enable scrolling within the container */
+  }
+  
+
+
+/* register form */
+
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.register-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.register-form h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+}
+
+#login-img {
+    width: 100%;
+}
+
+
+/* landing page  */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.landing-container {
+    background-image: url("https://cdn.pixabay.com/photo/2020/04/18/15/48/telework-5059653_960_720.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-content {
+    text-align: center;
+
+    color: white;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.landing-content:hover {
+    background-color:gray;
+    cursor: pointer;
+}
+
+.fixed-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.additional-content {
+    padding: 50px;
+    color:white;
+    text-align: center;
+}
+
+
+/* notification  */
+
+
+    body {
+        background-color: #f8f9fa;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    h1 {
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .form-label {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .form-control {
+        border: 1px solid #ccc;
+        padding: 8px;
+        width: 100%;
+        transition: border-color 0.3s ease-in-out;
+    }
+
+    .form-control:focus {
+        outline: none;
+        border-color: #007bff;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+        padding: 10px 20px;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 3px;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .btn-primary:hover {
+        background-color: #0069d9;
+    }
+    .notification-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #333;
+  margin-right: 20px;
+}
+
+.notification-icon:hover {
+  color: #f00;
+}
+
+
+
+
+body {
+        background-color: #f8f9fa;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    h1 {
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .question {
+        background-color: #fff;
+        padding: 15px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .question-description {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .options {
+        margin-bottom: 10px;
+    }
+
+    .correct-option {
+        color: green;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+
+    .delete-form {
+        margin-top: 10px;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+        border: none;
+        padding: 10px 20px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 3px;
+    }
+
+    .btn-danger:hover {
+        background-color: #c82333;
+    }
+    
+
+
+    body {
+        overflow-y: scroll;
+      }
+      
+
+
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+      
+
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+      
